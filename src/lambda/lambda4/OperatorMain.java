@@ -2,6 +2,7 @@ package lambda.lambda4;
 
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
+import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 /**
@@ -18,8 +19,10 @@ public class OperatorMain {
         System.out.println(unaryOperator.apply("hello"));
 
         //binaryOperator
-        BinaryOperator<Integer> binaryOperator = (a, b)-> a+b;
-        System.out.println(binaryOperator.apply(10,20));
+        Function<Integer,Integer> binaryOperator = (a) ->a ;
+
+        Function<Integer,Integer> binaryOperator1 = binaryOperator::apply; ;
+
 
         BiFunction<Integer, Integer, String> biFunction = (a, b)-> "answer = " + (a+b);
         System.out.println(biFunction.apply(10,20));

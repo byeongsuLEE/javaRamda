@@ -85,5 +85,9 @@ public class PrimitiveStreamMain {
                 .summaryStatistics();
 
         System.out.println(intSummaryStatistics1.getAverage());
+
+
+
+
     }
 }

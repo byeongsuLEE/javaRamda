@@ -22,7 +22,7 @@ java.util.function에서 기본 인터페이스를 제공해준다.
 - runnable 입력 x 리턴 x
 
 # 특화 함수형 인터페이스
-- Predicate :조건을 판단하는 함수
+- Predicate : 조건을 판단하는 함수
   - 입력 o 반환 boolean
   - 입력값을 받아 조건 판단
   - function < T , boolean> 으로 대체할 수 있지만 의도를 명시하기 위해 사용

@@ -16,3 +16,8 @@
 - 값을 줄이는 것
 - string.join(",")
 - Collectors.joining(",")
+
+4. Collectors.collectingAndThen
+- 다운 스트림 컬렉터가 만든 결과를 한번 더 후처리 할 수 있게 하는것
+- 처리방식 : 그룹화 -> 그 결과를 후처리
+- 
